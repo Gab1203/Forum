@@ -94,8 +94,6 @@ input:checked + .slider:before {
     color: #f5f5f5;
 }
 
-
-
 .dark-mode .links a:hover {
     background-color: #333333; 
 }

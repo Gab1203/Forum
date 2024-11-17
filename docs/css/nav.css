@@ -10,12 +10,21 @@ nav {
     justify-content: space-between;
 }
 
+
 nav #myLinks {
-    display: none;
     justify-items: center;
     text-align: center;
     margin: 0;
     padding: 0;
+    max-height: 0; 
+    opacity: 0;
+    overflow: hidden; 
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+nav #myLinks.show {
+    max-height: 500px;
+    opacity: 1; 
 }
 
 nav a {
@@ -35,7 +44,7 @@ nav a.icon {
     margin: 0;
     padding-top: 10px;
     border: none;
-    
+    transition: opacity 0.1s ease, visibility 0.1s ease;
 }
 
 
