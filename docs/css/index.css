@@ -6,100 +6,66 @@ body {
     padding: 0;
 }
 
-.topNav {
-    overflow: hidden;
-    background-color: black;
-    position: relative;
-}
-
-.topNav #myLinks {
-    display: none;
-}
-
-.topNav a {
-    color: rgb(35, 137, 253);
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-}
-
-.topNav a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    left: 50%;
-    top: 0;
-    width: 50;
-    border: none;
-}
-
-.topNav a.icon:hover {
-    transition: 0.5s;
-    background-color: #ddd;
-    filter: invert(10%);
-}
-
-.active {
-    background-color: black;
-    color: white;
-}
-
 .categorias, .destaque, .receitas {
     display: flex;
     gap: 20px;
     margin-bottom: 20px;
     margin-top: 40px;
 }
+
 .categoria, .card {
     
-        background-color: #fff;
-        padding: 15px;
-        border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        flex: 1;
-        text-align: center;
-        max-width: 30%; 
-        margin: 0 auto; 
-    }
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: center;
+    max-width: 30%; 
+    margin: 0 auto; 
+}
     
-
 .categoria img, .card img {
     width: 100%;
     height: auto;
     border-radius: 8px;
 }
+
 .categorias h2, .destaque h2, .receitas h2 {
     margin-bottom: 10px;
 }
+
 .destaque .texto {
     text-align: left;
-
 }
+
 .receitas-em-tendencia {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
+
 .receitas-em-tendencia div {
     background-color: white;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
+
 .categoria img, .card img {
     width: 80%; 
     height: auto;
     max-width: 300px; 
     border-radius: 8px;
 }
+
 .lasanha-container {
     display: flex;
     flex-direction: row; 
     align-items: center; 
     justify-content: space-between; 
     margin: 45px 0; 
-    width: 100%; 
+    width: 95%; 
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 8px;

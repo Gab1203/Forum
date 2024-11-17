@@ -1,0 +1,43 @@
+nav {
+    overflow: hidden;
+    background-color: #111;
+    position: relative;
+    flex-direction: row;
+}
+
+#navigation{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav #myLinks {
+    display: none;
+    justify-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: rgb(35, 137, 253);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+nav a.icon {
+    background: #111;
+    display: block;
+    margin: 0;
+    padding-top: 10px;
+    top: 0;
+    border: none;
+    justify-items: center;
+}
+
+nav a.icon:hover {
+    transition: 0.5s;
+    background-color: #ddd;
+    filter: invert(10%);
+}
