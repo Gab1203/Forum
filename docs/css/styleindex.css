@@ -6,30 +6,44 @@
         margin: 0;
         padding: 0;
     }
-    nav {
-        background-color: #333;
-        display: flex;
-        justify-content: center; /* Centraliza os elementos */
-        padding: 10px 20px;
+    
+    .topNav {
+        overflow: hidden;
+        background-color: black;
+        position: relative;
     }
-    nav a {
-        color: white;
+    
+    .topNav #myLinks {
+        display: none;
+    }
+
+    .topNav a {
+        color: rgb(35, 137, 253);
+        padding: 14px 16px;
         text-decoration: none;
-        margin: 0 15px;
-        padding: 8px 16px;
-        transition: background-color 0.3s;
+        font-size: 17px;
+        display: block;
     }
-    nav a:hover {
-        background-color: #555;
-        border-radius: 4px;
+
+    .topNav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
-    nav a.active {
-        background-color: #007bff;
-        border-radius: 4px;
-    .container {
-        padding: 20px;
+
+    .topNav a:hover {
+        background-color: #ddd;
+        color: black;
+
     }
-}
+    
+    .active {
+        background-color: black;
+        color: white;
+    }
+
     .categorias, .destaque, .receitas {
         display: flex;
         gap: 20px;
@@ -44,8 +58,8 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             flex: 1;
             text-align: center;
-            max-width: 30%; /* Ajuste a largura máxima conforme necessário */
-            margin: 0 auto; /* Centraliza o contêiner */
+            max-width: 30%; 
+            margin: 0 auto; 
         }
         
     
@@ -59,6 +73,7 @@
     }
     .destaque .texto {
         text-align: left;
+
     }
     .receitas-em-tendencia {
         display: flex;
@@ -66,24 +81,24 @@
         gap: 15px;
     }
     .receitas-em-tendencia div {
-        background-color: #;
+        background-color: white;
         padding: 10px;
         border-radius: 8px;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     }
     .categoria img, .card img {
-        width: 80%; /* Ajuste de 100% para 80%, ou outro valor desejado */
+        width: 80%; 
         height: auto;
-        max-width: 300px; /* Defina um limite máximo de largura, opcional */
+        max-width: 300px; 
         border-radius: 8px;
     }
     .lasanha-container {
         display: flex;
-        flex-direction: row; /* Alinha elementos lado a lado */
-        align-items: center; /* Centraliza verticalmente */
-        justify-content: space-between; /* Espaça os elementos */
-        margin: 45px 0; /* Ajuste a margem superior e inferior */
-        width: 100%; /* O contêiner vai ocupar toda a largura da página */
+        flex-direction: row; 
+        align-items: center; 
+        justify-content: space-between; 
+        margin: 45px 0; 
+        width: 100%; 
         padding: 15px;
         border: 1px solid #ccc;
         border-radius: 8px;
@@ -92,14 +107,14 @@
     }
     
     .lasanha-container img {
-        width: 35%; /* Diminuímos a largura da imagem para 35% */
+        width: 35%; 
         height: auto;
         border-radius: 8px;
-        margin-right: 20px; /* Espaçamento entre a imagem e o texto */
+        margin-right: 20px; 
     }
     
     .lasanha-container .texto {
-        flex: 1; /* O texto ocupa o restante do espaço disponível */
+        flex: 1; 
         text-align: left;
     }
     
