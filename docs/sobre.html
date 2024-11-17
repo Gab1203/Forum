@@ -1,11 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/sobre.css">
+   
+   
 </head>
 <body>
-    
+    <div class="background-animation">
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+    <nav class="topNav">
+        <a href="index.html" class="active">Fórum de Culinária</a>
+
+        <div id="myLinks">
+            <a href="index.html" >Home</a>
+            <a href="login.html">Login</a>
+            <a href="forum.html">Fórum</a>
+            <a href="sobre.html">Sobre</a>
+        </div>
+
+        <a  class="icon" onclick="showNav()">
+            <i class="fa fa-bars"></i>
+          </a>
+    </nav>
+
+    <section class="about-section">
+        <div class="about-header">
+            <h2>Sobre o fórum de culinária</h2>
+            <p>Transformando vidas através da educação tecnológica</p>
+        </div>
+
+        <div class="about-content">
+            <div class="about-card" data-aos="fade-up" data-aos-delay="100">
+                <h3>Nossa Missão</h3>
+                <p>Democratizar o acesso à educação tecnológica de qualidade, formando profissionais capacitados e prontos para os desafios do mercado digital.</p>
+            </div>
+
+            <div class="about-card" data-aos="fade-up" data-aos-delay="200">
+                <h3>Nossa Visão</h3>
+                <p>Ser referência global em educação tecnológica, impactando positivamente a vida de milhões de pessoas através do conhecimento digital.</p>
+            </div>
+
+            <div class="about-card" data-aos="fade-up" data-aos-delay="300">
+                <h3>Nossos Valores</h3>
+                <p>Inovação, excelência, compromisso com o aprendizado, inclusão digital e desenvolvimento contínuo são os pilares que norteiam nossa atuação.</p>
+            </div>
+        </div>
+
+        <div class="stats-container">
+            <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+                <div class="stat-number" data-value="245">0</div>
+                <div class="stat-label">Alunos Formados</div>
+            </div>
+
+            <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+                <div class="stat-number" data-value="3">0</div>
+                <div class="stat-label">Cursos Disponíveis</div>
+            </div>
+
+            <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+                <div class="stat-number" data-value="100%">0</div>
+                <div class="stat-label">Satisfação dos Alunos</div>
+            </div>
+
+            <div class="stat-item" data-aos="zoom-in" data-aos-delay="400">
+                <div class="stat-number" data-value="6">0</div>
+                <div class="stat-label">Professores Especialistas</div>
+            </div>
+        </div>
+    </section>
+
+    <script src="JS/sobre.js">  
+    </script>
+  
 </body>
 </html>
