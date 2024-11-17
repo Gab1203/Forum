@@ -6,18 +6,14 @@
     <title>Fórum de Culinária</title>
     <link rel="stylesheet" href="css/darkmode.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/geral.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" href="https://www.flaticon.com/free-icon/food_10366416" type="image/x-icon"/>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/685/685352.png" type="image/x-icon">
+    <script src="JS/nav.js" defer></script>
 </head>
 <body>
 
-    <div class="toggle-container">
-        <span id="toggle-text">WHITE MODE</span>
-        <label class="switch">
-            <input type="checkbox" id="mode-toggle">
-            <span class="slider"></span>
-        </label>
-    </div>
+    
 
     <nav class="topNav">
         <a href="index.html" class="active">Fórum de Culinária</a>
@@ -31,10 +27,19 @@
         <a  class="icon" onclick="showNav()">
             <i class="fa fa-bars"></i>
         </a>
+        
+        <div class="toggle-container">
+            <span id="toggle-text">WHITE MODE</span>
+            
+            <label class="switch">
+                <input type="checkbox" id="mode-toggle">
+                <span class="slider"></span>
+            </label>
+        </div>
     </nav>
 
-</head>
-<body>
+
+
 <div class="container">
     <div class="categorias">
         <div class="categoria">
@@ -119,6 +124,6 @@
 
 </body>
 <script src="JS/darkmode.js"></script>
-<script src="JS/index.js"></script>
+
 </html>
 

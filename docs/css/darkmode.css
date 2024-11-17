@@ -2,14 +2,14 @@
 .toggle-container {
     position: absolute;
     top: 10px;
-    right: 20px;
+    right: 5px;
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
 #toggle-text {
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: bold;
     color: #f5f5f5;
 }
