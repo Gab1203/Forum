@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 :root {
@@ -19,7 +19,7 @@
     --secondary-color: #2a6f97;
     --background: #1a1a1a;
     --text-color: #e0e0e0;
-    --card-background: rgba(40, 40, 40, 0.9);
+    --card-background: #333;
     --shadow-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -32,43 +32,6 @@ body {
     overflow-x: hidden;
 }
 
-.topNav {
-    overflow: hidden;
-    background-color: black;
-    position: relative;
-}
-
-.topNav #myLinks {
-    display: none;
-}
-
-.topNav a {
-    color: rgb(35, 137, 253);
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-}
-
-.topNav a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-.topNav a:hover {
-    background-color: #ddd;
-    color: black;
-
-}
-
-.active {
-    background-color: black;
-    color: white;
-}
-
 .background-animation {
     position: fixed;
     top: 0;
@@ -77,44 +40,6 @@ body {
     height: 100%;
     z-index: -1;
     opacity: 0.5;
-}
-
-.circle {
-    position: absolute;
-    border-radius: 50%;
-    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
-    animation: float 15s infinite ease-in-out;
-}
-
-.circle:nth-child(1) {
-    width: 300px;
-    height: 300px;
-    top: -150px;
-    left: -150px;
-    animation-delay: 0s;
-}
-
-.circle:nth-child(2) {
-    width: 400px;
-    height: 400px;
-    bottom: -200px;
-    right: -200px;
-    animation-delay: -5s;
-}
-
-@keyframes float {
-    0%, 100% {
-        transform: translate(0, 0) rotate(0deg);
-    }
-    25% {
-        transform: translate(50px, 50px) rotate(90deg);
-    }
-    50% {
-        transform: translate(100px, 0) rotate(180deg);
-    }
-    75% {
-        transform: translate(50px, -50px) rotate(270deg);
-    }
 }
 
 .about-section {
@@ -160,7 +85,7 @@ body {
     border-radius: 20px;
     padding: 30px;
     box-shadow: 8px 8px 15px var(--shadow-color),
-                -8px -8px 15px rgba(255, 255, 255, 0.5);
+                -8px -8px 15px rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     transform: translateY(0);
     transition: all 0.3s ease;
@@ -169,7 +94,7 @@ body {
 .about-card:hover {
     transform: translateY(-10px);
     box-shadow: 12px 12px 20px var(--shadow-color),
-                -12px -12px 20px rgba(255, 255, 255, 0.5);
+                -12px -12px 20px rgba(255, 255, 255, 0.15);
 }
 
 .about-card i {
@@ -202,7 +127,7 @@ body {
     background: var(--card-background);
     border-radius: 15px;
     box-shadow: 5px 5px 10px var(--shadow-color),
-                -5px -5px 10px rgba(255, 255, 255, 0.5);
+                -5px -5px 10px rgba(255, 255, 255, 0.1);
 }
 
 .stat-number {
