@@ -3,14 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/stylelogin.css">
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/darkmode.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Login</title>
 
 </head>
 <body>
+    <button id="button-back" onclick="history.back()">
+        <span class="material-icons">arrow_back</span>
+        Voltar
+    </button>
+
+    <div class="toggle-container">
+        <span id="toggle-text">WHITE MODE</span>
+        <label class="switch">
+            <input type="checkbox" id="mode-toggle">
+            <span class="slider"></span>
+        </label>
+    </div>
+    
     <div class="container">
         <div class="header">
-            <h1>Login</h1>
+            <h1 id="h1-login">Faça seu Login</h1>
+            <h1 id="h1-registro">Faça seu Registro</h1>
         </div>
         <form>
             <div class="form-group">
@@ -22,20 +40,21 @@
                 <input type="password" id="pass" placeholder="Digite sua senha:" required>
             </div>
 
-            <button type="submit" onclick="login(event)" class="btn-cadastrar">Login</button>
-        </form>
-            <a href="cadastro.html" class="btn btn-cadastrar">Cadastrar</a>
+            <button type="submit" onclick="login(event)">Login</button>
+            <button type="submit" onclick="">Registrar</button>
+        
+            
 
             <div class="forgot-password">
                 <a href="#">Esqueceu sua senha?</a>
             </div>
             <div class="social-icons">
-                <img src="https://w7.pngwing.com/pngs/989/129/png-transparent-google-logo-google-search-meng-meng-company-text-logo-thumbnail.png" alt="Google">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/100px-Apple_logo_black.svg.png" alt="Apple">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+                <a href="#"><div class="go"><i class="fab fa-google"></i>  Google</div></a>
+                <a href="#"><div class="fb"><i class="fab fa-facebook"></i>  Facebook</div></a>
             </div>
+        </form>
     </div>
 </body>
-
+<script src="JS/darkmode.js"></script>
 <script src="JS/login.js"></script>
 </html>
