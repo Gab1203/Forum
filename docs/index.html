@@ -16,9 +16,6 @@
     <script src="JS/nav.js" defer></script>
 </head>
 <body>
-
-    
-
     <nav>
         <a  class="icon" onclick="showNav()">
                 <i class="fa fa-bars"></i>
@@ -96,22 +93,22 @@
             <div id="wrapper">
                 <div id="carousel">
                     <div id="content">
-                        <section class="card">
+                        <section class="card-carousel">
                             <img src="https://www.cevrimiciterapi.com/wp-content/uploads/2022/12/rivotril-1024x768.jpg" alt="Imagem do Produto">
                             <h2>Nome do Produto</h2>
                             <p>Descrição breve do produto.</p>
                         </section>
-                        <section class="card">
+                        <section class="card-carousel">
                             <img src="https://www.cevrimiciterapi.com/wp-content/uploads/2022/12/rivotril-1024x768.jpg" alt="Imagem do Produto">
                             <h2>Nome do Produto</h2>
                             <p>Descrição breve do produto.</p>
                         </section>
-                        <section class="card">
+                        <section class="card-carousel">
                             <img src="https://www.cevrimiciterapi.com/wp-content/uploads/2022/12/rivotril-1024x768.jpg" alt="Imagem do Produto">
                             <h2>Nome do Produto</h2>
                             <p>Descrição breve do produto.</p>
                         </section>
-                        <section class="card">
+                        <section class="card-carousel">
                             <img src="https://www.cevrimiciterapi.com/wp-content/uploads/2022/12/rivotril-1024x768.jpg" alt="Imagem do Produto">
                             <h2>Nome do Produto</h2>
                             <p>Descrição breve do produto.</p>
@@ -129,73 +126,81 @@
             </button>
         </div>
 
-
-
-        
-
-    
-
-    <div id="lasanha-container">
-        <img src="https://s2-receitas.glbimg.com/S2uGYrdFSpaxUJFmDqycdDyLQFQ=/0x0:1080x608/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2022/o/o/6ewoYhTjmXlnI4iLS7sQ/capa-home.png" alt="Imagem de Destaque" style="width: 50%; border-radius: 8px;">
-        
-        <div class="texto">
-            <h2>Segredos para Preparar a Melhor Lasanha Caseira</h2>
-            <p>Descubra como fazer uma lasanha perfeita, com camadas deliciosas de molho, queijo e massa. 
-                Dicas exclusivas para garantir que seu prato seja um sucesso!</p>
+        <div id="lasanha-container">
+            <img src="https://static.vecteezy.com/system/resources/previews/017/775/369/non_2x/food-template-and-restaurant-web-banner-burger-banner-design-social-media-banner-fast-food-digital-template-template-design-delicious-food-restaurant-banner-free-vector.jpg">
+            
+            <div class="texto">
+                <h2>Segredos para Preparar a Melhor Lasanha Caseira</h2>
+                <p>Descubra como fazer uma lasanha perfeita, com camadas deliciosas de molho, queijo e massa. 
+                    Dicas exclusivas para garantir que seu prato seja um sucesso!</p>
+            </div>
         </div>
-    </div>
-</div>
-
-    <div id="receitas">
-        <div class="card">
-            <h2 style="text-align: center;">Receitas da Comunidade:</h2>
-            <div class="receitas-em-tendencia">
-                <div>
+        <div style="flex-direction: row;">
+            <div style="flex-direction: column;">
+    
+                <h2 style="text-align: center;">Receitas da Comunidade:</h2>
+            
+                <div class="card" href="#">
                     <img src="https://guiadacozinha.com.br/wp-content/uploads/2018/08/bolo-de-cenoura-recheado.jpg" alt="Bolo de Cenoura">
                     <h3>Bolo de Cenoura com Cobertura de Chocolate</h3>
                 </div>
-
-                <div>
+    
+                <div class="card">
                     <img src="https://i.ytimg.com/vi/AMwHNwOYTZo/maxresdefault.jpg" alt="Frango ao Molho">
                     <h3>Frango ao Molho de Mostarda</h3>
                 </div>
-
-                <div>
+                
+    
+                <div class="card">
                     <img src="https://receiterapia.com.br/wp-content/uploads/2022/05/como-fazer-salada-de-quinoa.jpeg" alt="Salada de Quinoa">
                     <h3>Salada de Quinoa com Legumes</h3>
                 </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <h2 style="text-align: center;">Receitas em Tendência:</h2>
-            <div class="receitas-em-tendencia">
-                <div>
+    
+            </div>     
+        
+    
+            <hr style="flex-direction: column;">
+    
+            <div style="flex-direction: column;">
+    
+                <h2 style="text-align: center;">Receitas em Tendência:</h2>
+                
+                <div class="card">
                     <img src="https://www.casalcozinha.com.br/wp-content/uploads/2020/11/receita-simples-e-caseira-de-torta-de-maca.png" alt="Torta de Maçã">
                     <h2>Torta de Maçã Clássica</h2>
                 </div>
-
-                <div>
+    
+                <div class="card">
                     <img src="https://todeschinialimentos.com.br/images/receitas/2/todeschini-imagem-receitas-macarrao-carbonara-share.jpg" alt="Macarrão Carbonara">
                     <h2>Macarrão Carbonara Autêntico</h2>
                 </div>
-
-                <div>
+    
+                <div class="card">
                     <img src="https://www.receitasnestle.com.br/sites/default/files/srh_recipes/e04f19accde8c5a9c931b56407fc8ed0.jpg" alt="Sopa de Abóbora">
                     <h2>Sopa de Abóbora Cremosa</h2>
                 </div>
+            
             </div>
         </div>
     </div>
+
+    
+
+
 </div>
+
 
 <footer style="text-align: center; background-color: #333; color: white; height: auto; padding: 0;">
         <h3>&copy; GFVLB<br>
         Blog de Culinária</h3>
 </footer>
 
-</body>
+
+
+
 <script src="JS/darkmode.js"></script>
 
+
+</body>
 </html>
 
