@@ -1,3 +1,4 @@
+/* Geral */
 nav {
     overflow: hidden;
     background-color: #111;
@@ -5,26 +6,25 @@ nav {
     flex-direction: row;
 }
 
-#navigation{
+#navigation {
     display: flex;
     justify-content: space-between;
 }
-
 
 nav #myLinks {
     justify-items: center;
     text-align: center;
     margin: 0;
     padding: 0;
-    max-height: 0; 
+    max-height: 0;
     opacity: 0;
-    overflow: hidden; 
+    overflow: hidden;
     transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
 }
 
 nav #myLinks.show {
     max-height: 500px;
-    opacity: 1; 
+    opacity: 1;
 }
 
 nav a {
@@ -47,7 +47,7 @@ nav a.icon {
     transition: opacity 0.1s ease, visibility 0.1s ease;
 }
 
-.icon i{
+.icon i {
     font-size: 30px;
 }
 
@@ -55,4 +55,27 @@ nav a.icon:hover {
     transition: 0.5s;
     background-color: #ddd;
     filter: invert(10%);
+}
+
+/* desktop */
+@media (min-width: 651px) {
+    nav a.icon {
+        display: none; /* oculto em desktop */
+    }
+
+    nav #myLinks {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        opacity: 1;
+        max-height: none;
+
+
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        padding-top: 10px;
+    }
 }
