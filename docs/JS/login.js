@@ -1,23 +1,14 @@
-// var email = document.querySelector('#em')
-// var password = document.querySelector('#pass')
+const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
 
-// var mail = "usuario@exemplo.com"
-// var senha = "12345"
+signUpButton.addEventListener('click', () => {
+    container.classList.add("right-panel-active");
+});
 
-// function login(event){
-//     event.preventDefault()
-//     let insertedEmail =  email.value
-//     let insertedPassword = password.value
-//     console.log(insertedEmail)
-//     console.log(insertedPassword)
-
-//     if(insertedEmail === mail && insertedPassword === senha){
-//         window.location.replace('index.html');
-//     } else {
-//         alert('Email ou senha incorreto!');
-//     }
-
-// }
+signInButton.addEventListener('click', () => {
+    container.classList.remove("right-panel-active");
+});
 
 
 var email = document.querySelector('#em');
