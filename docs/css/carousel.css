@@ -1,87 +1,58 @@
-/* ROLAMENTO ANUNCIO */
-#carroussel{
+/* Carrossel */
+#carroussel {
     margin: 25px 0 50px;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: auto;
-}
-#wrapper {
-    width: 100%;
-    position: relative;
-    z-index: 1;
-}
-#carousel {
-    overflow: hidden;
-    margin: 0 5%;
-    display: flex;
+    text-align: center;
 }
 
-#prev, #next {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    background: rgb(156, 156, 156);
-    border: none;
-    padding: 8px;
-    border-radius: 50%;
-    outline: 0;
-    cursor: pointer;
-    position: absolute;
-    z-index: 5;
-}
-#prev svg, #next svg{
-    width: 30px;
-    height: 30px;
+.gallery {
+    margin: 0 auto;
+    padding: 20px 0;
     
 }
-#prev {
-    bottom: 50;
-    left: 0%;
-    display: none;
-} 
-#next {
-    top: 50;
-    right: 0%;
-    display: none;
-}
-#content {
-    display: flex;
-    gap: 20px;
-    overflow: hidden;
-    transition: transform 0.5s ease;
+
+.gallery-cell {
+    width: 250px;
+    margin: 0px 25px;
 }
 
-/*card do carroussel*/
 .card-carousel {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    height: auto;
-    width: 500px;
+    width: 100%;
     text-align: center;
     padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
+
 .dark-mode .card-carousel {
     background-color: #333;
 }
+
 .card-carousel img {
-    width: 500px;
-    height: 250px;
-    border-bottom: 1px solid #ddd;
-}
-.card-carousel h2 {
-    font-size: 1.4em;
-    margin: 16px 0;
-}
-.card-carousel p {
-    color: #555;
-    font-size: 1em;
-    margin: 16px 0;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
+.card-carousel h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.card-carousel p {
+    font-size: 0.9em;
+    color: #555;
+    margin: 0;
+}
+
+.dark-mode .card-carousel p {
+    font-size: 0.9em;
+    color: #777;
+    margin: 0;
+}

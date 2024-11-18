@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fórum de Culinária</title>
+
     <link rel="stylesheet" href="css/darkmode.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/carousel.css">
+    
+    <!-- carrossel -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
+    <!-- fonte e favicon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/685/685352.png" type="image/x-icon">
@@ -96,42 +102,62 @@
         </div>
 
         <div id="carroussel">
-            <h3 style="text-align: center; margin: 35px 0 10px 0;"> Talvez você goste:</h2>
-            <div id="wrapper">
-                <div id="carousel">
-                    <div id="content">
-                        <a href="#content" class="card-carousel">
-                            <img src="https://www.cevrimiciterapi.com/wp-content/uploads/2022/12/rivotril-1024x768.jpg" alt="Imagem do Produto">
-                            <h2>Nome do Produto</h2>
-                            <p>Descrição breve do produto.</p>
-                        </a>
-                        <a href="#content" class="card-carousel">
-                            <img src="https://www.cevrimiciterapi.com/wp-content/uploads/2022/12/rivotril-1024x768.jpg" alt="Imagem do Produto">
-                            <h2>Nome do Produto</h2>
-                            <p>Descrição breve do produto.</p>
-                        </a>
-                        <a href="#content" class="card-carousel">
-                            <img src="https://www.cevrimiciterapi.com/wp-content/uploads/2022/12/rivotril-1024x768.jpg" alt="Imagem do Produto">
-                            <h2>Nome do Produto</h2>
-                            <p>Descrição breve do produto.</p>
-                        </a>
-                        <a href="#content" class="card-carousel">
-                            <img src="https://www.cevrimiciterapi.com/wp-content/uploads/2022/12/rivotril-1024x768.jpg" alt="Imagem do Produto">
-                            <h2>Nome do Produto</h2>
-                            <p>Descrição breve do produto.</p>
-                        </a>
-                    </div>
+            <h3 style="text-align: center; margin: 35px 0 10px 0;">Talvez você goste:</h3>
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true, "pageDots": false }'>
+                <div class="gallery-cell">
+                    <a href="#content" class="card-carousel">
+                        <img src="https://www.guiadasemana.com.br/contentFiles/image/2021/05/FEA/67190_shutterstock-781203586.jpg" alt="Imagem do Produto">
+                        <h2>Pudim Delicioso</h2>
+                        <p>Descubra a cremosidade e o sabor irresistível deste pudim clássico.</p>
+                    </a>
                 </div>
+                <div class="gallery-cell">
+                    <a href="#content" class="card-carousel">
+                        <img src="https://www.guiadasemana.com.br/contentFiles/image/2021/05/FEA/67190_shutterstock-781203586.jpg" alt="Imagem do Produto">
+                        <h2>Pudim Delicioso</h2>
+                        <p>Descubra a cremosidade e o sabor irresistível deste pudim clássico.</p>
+                    </a>
+                </div>
+                <div class="gallery-cell">
+                    <a href="#content" class="card-carousel">
+                        <img src="https://www.guiadasemana.com.br/contentFiles/image/2021/05/FEA/67190_shutterstock-781203586.jpg" alt="Imagem do Produto">
+                        <h2>Pudim Delicioso</h2>
+                        <p>Descubra a cremosidade e o sabor irresistível deste pudim clássico.</p>
+                    </a>
+                </div>
+                <div class="gallery-cell">
+                    <a href="#content" class="card-carousel">
+                        <img src="https://www.guiadasemana.com.br/contentFiles/image/2021/05/FEA/67190_shutterstock-781203586.jpg" alt="Imagem do Produto">
+                        <h2>Pudim Delicioso</h2>
+                        <p>Descubra a cremosidade e o sabor irresistível deste pudim clássico.</p>
+                    </a>
+                </div>
+                <div class="gallery-cell">
+                    <a href="#content" class="card-carousel">
+                        <img src="https://www.guiadasemana.com.br/contentFiles/image/2021/05/FEA/67190_shutterstock-781203586.jpg" alt="Imagem do Produto">
+                        <h2>Pudim Delicioso</h2>
+                        <p>Descubra a cremosidade e o sabor irresistível deste pudim clássico.</p>
+                    </a>
+                </div>
+                <div class="gallery-cell">
+                    <a href="#content" class="card-carousel">
+                        <img src="https://www.guiadasemana.com.br/contentFiles/image/2021/05/FEA/67190_shutterstock-781203586.jpg" alt="Imagem do Produto">
+                        <h2>Pudim Delicioso</h2>
+                        <p>Descubra a cremosidade e o sabor irresistível deste pudim clássico.</p>
+                    </a>
+                </div>
+                <div class="gallery-cell">
+                    <a href="#content" class="card-carousel">
+                        <img src="https://www.guiadasemana.com.br/contentFiles/image/2021/05/FEA/67190_shutterstock-781203586.jpg" alt="Imagem do Produto">
+                        <h2>Pudim Delicioso</h2>
+                        <p>Descubra a cremosidade e o sabor irresistível deste pudim clássico.</p>
+                    </a>
+                </div>
+                
+                
             </div>
-            <!-- BOTÕES DE NAVEGAÇÃO -->
-            <button id="prev">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
-            </button>
-            
-            <button id="next">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
-            </button>
         </div>
+
 
         <div id="receitas">
             <div class="card-coluna">
