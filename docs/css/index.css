@@ -50,14 +50,10 @@ a {
 .card-coluna{
     display: block;
     justify-content: center;
-    width: 180px;
+    width: 200px;
 }
 
-.card-coluna{
-    display: block;
-    justify-content: center;
-    width: 180px;
-}
+
 
 .card h2 {
     font-size: 1.2em;
