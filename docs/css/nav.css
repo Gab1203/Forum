@@ -15,11 +15,14 @@ nav #myLinks {
     justify-items: center;
     text-align: center;
     margin: 0;
-    padding: 0;
+    padding: 5px;
     max-height: 0;
     opacity: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+}
+nav #myLinks a:hover {
+    background-color: #222;
 }
 
 nav #myLinks.show {
@@ -69,8 +72,6 @@ nav a.icon:hover {
         align-items: center;
         opacity: 1;
         max-height: none;
-
-
         position: absolute;
         top: 20px;
         left: 50%;
