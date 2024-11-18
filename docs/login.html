@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/685/685352.png" type="image/x-icon">
     <title>Login</title>
-
 </head>
 <body> 
     <button id="button-back" onclick="history.back()">
@@ -24,110 +23,59 @@
             <span class="slider"></span>
         </label>
     </div>
-<!--
-    <div class="container">
-        <div class="header">
-            <h1 id="h1-login">Faça seu Login</h1>
-            <h1 id="h1-registro">Faça seu Registro</h1>
-        </div>
-        <form>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="text" id="em" placeholder="Digite seu email:" required>
-            </div>
-            <div class="form-group">
-                <label for="password">Senha</label>
-                <input type="password" id="pass" placeholder="Digite sua senha:" required>
-            </div>
 
-            <button type="submit" onclick="login(event)">Login</button>
-            <button type="submit" onclick="">Registrar</button>
-        
-            
-
-            <div class="forgot-password">
-                <a href="#">Esqueceu sua senha?</a>
-            </div>
-            <div class="social-icons">
-                <a href="#"><div class="go"><i class="fab fa-google"></i>  Google</div></a>
-                <a href="#"><div class="fb"><i class="fab fa-facebook"></i>  Facebook</div></a>
-            </div>
-        </form>
-    </div>-->
     <div class="container" id="container">
+        <!-- REGISTRO -->
         <div class="form-container sign-up-container">
             <form>
-
                 <h1>Faça seu Registro</h1>
-
-                <input type="text" placeholder="Nome" />
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Senha" />
-
+                <input type="text" id="nome" placeholder="Nome" required/>
+                <input type="email" id="mail" placeholder="Email" required/>
+                <input type="password" id="senha" placeholder="Senha" required/>
                 <div class="social-icons">
                     <a href="#"><div class="go"><i class="fab fa-google"></i>  Google</div></a>
                     <a href="#"><div class="fb"><i class="fab fa-facebook"></i>  Facebook</div></a>
                 </div>
-
                 <button>Registrar</button>
-
             </form>
         </div>
 
+        <!-- LOGIN -->
         <div class="form-container sign-in-container">
-
             <form>
-
                 <h1 style="margin-bottom: 30px;">Faça Login</h1>
                 <label for="password">Email</label>
-                <input type="email" placeholder="Email"/>
+                <input type="email" id="em" placeholder="Email" required/>
                 <label for="password">Senha</label>
-                <input type="password" placeholder="Senha" />
-                
-                
-
-                <a href="#">Esqueceu sunha senha?</a>
-                <button type="submit" onclick="login(event)">Login</button>
-                
+                <input type="password" id="pass" placeholder="Senha" required/>
+                <a href="#">Esqueceu sua senha?</a>
+                <button type="button" id="loginBtn">Login</button>
                 <div class="social-icons">
                     <a href="#"><div class="go"><i class="fab fa-google"></i>  Google</div></a>
                     <a href="#"><div class="fb"><i class="fab fa-facebook"></i>  Facebook</div></a>
                 </div>
-
             </form>
-
         </div>
 
         <div class="overlay-container">
-
             <div class="overlay">
-
                 <div class="overlay-panel overlay-left">
-
                     <h1>Bem vindo de volta!</h1>
                     <p>Digite seus dados para logar</p>
                     <button class="ghost" id="signIn">Logar</button>
-
                 </div>
-
                 <div class="overlay-panel overlay-right">
-
                     <h1>Olá!</h1>
                     <p>Preencha aqui suas informações para se cadastrar</p>
                     <button class="ghost" id="signUp">Registrar-se</button>
-
                 </div>
-
             </div>
-
         </div>
-
     </div>
 </body> 
 
 <script src="JS/darkmode.js"></script>
 <script src="JS/login.js"></script>
-
 <script>
     const signUpButton = document.getElementById('signUp');
     const signInButton = document.getElementById('signIn');
