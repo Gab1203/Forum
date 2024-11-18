@@ -1,6 +1,6 @@
 /* ROLAMENTO ANUNCIO */
 #carroussel{
-    margin: 0;
+    margin: 25px 0 50px;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -47,7 +47,7 @@
 #next {
     top: 50;
     right: 0%;
-    transform: translateY(-50%);
+    display: none;
 }
 #content {
     display: flex;

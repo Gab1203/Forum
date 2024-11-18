@@ -47,6 +47,9 @@ nav a.icon {
     transition: opacity 0.1s ease, visibility 0.1s ease;
 }
 
+.icon i{
+    font-size: 30px;
+}
 
 nav a.icon:hover {
     transition: 0.5s;
