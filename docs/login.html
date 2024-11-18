@@ -36,7 +36,7 @@
                     <a href="#"><div class="go"><i class="fab fa-google"></i>  Google</div></a>
                     <a href="#"><div class="fb"><i class="fab fa-facebook"></i>  Facebook</div></a>
                 </div>
-                <button>Registrar</button>
+                <button type="submit" onclick="register(event)">Registrar</button>
             </form>
         </div>
 
@@ -49,7 +49,7 @@
                 <label for="password">Senha</label>
                 <input type="password" id="pass" placeholder="Senha" required/>
                 <a href="#">Esqueceu sua senha?</a>
-                <button type="button" id="loginBtn">Login</button>
+                <button type="submit" id="loginBtn" onclick="login(event)">Login</button>
                 <div class="social-icons">
                     <a href="#"><div class="go"><i class="fab fa-google"></i>  Google</div></a>
                     <a href="#"><div class="fb"><i class="fab fa-facebook"></i>  Facebook</div></a>
@@ -72,6 +72,8 @@
             </div>
         </div>
     </div>
+
+   
 </body> 
 
 <script src="JS/darkmode.js"></script>
