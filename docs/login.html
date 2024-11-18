@@ -16,62 +16,62 @@
         Voltar
     </button>
 
-    <div class="toggle-container" style="position: absolute; top: 10px; right: 5px;">
+    <section class="toggle-container" style="position: absolute; top: 10px; right: 5px;">
         <span id="toggle-text">Claro</span>
         <label class="switch">
             <input type="checkbox" id="mode-toggle">
             <span class="slider"></span>
         </label>
-    </div>
+    </section>
 
-    <div class="container" id="container">
+    <main class="container" id="container">
         <!-- REGISTRO -->
-        <div class="form-container sign-up-container">
+        <section class="form-container sign-up-container">
             <form>
-                <h1>Faça seu Registro</h1>
+                <h1 style="margin-bottom: 30px; font-size: 2em;">Faça seu Registro</h1>
                 <input type="text" id="nome" placeholder="Nome" required/>
                 <input type="email" id="mail" placeholder="Email" required/>
                 <input type="password" id="senha" placeholder="Senha" required/>
-                <div class="social-icons">
-                    <a href="#"><div class="go"><i class="fab fa-google"></i>  Google</div></a>
-                    <a href="#"><div class="fb"><i class="fab fa-facebook"></i>  Facebook</div></a>
-                </div>
+                <article class="social-icons">
+                    <a href="#"><aside class="go"><i class="fab fa-google"></i>  Google</aside></a>
+                    <a href="#"><aside class="fb"><i class="fab fa-facebook"></i>  Facebook</aside></a>
+                </article>
                 <button type="submit" onclick="register(event)">Registrar</button>
             </form>
-        </div>
+        </section>
 
         <!-- LOGIN -->
-        <div class="form-container sign-in-container">
+        <section class="form-container sign-in-container">
             <form>
-                <h1 style="margin-bottom: 30px;">Faça Login</h1>
+                <h1 style="margin-bottom: 30px; font-size: 2em;">Faça Login</h1>
                 <label for="password">Email</label>
                 <input type="email" id="em" placeholder="Email" required/>
                 <label for="password">Senha</label>
                 <input type="password" id="pass" placeholder="Senha" required/>
                 <a href="#">Esqueceu sua senha?</a>
                 <button type="submit" id="loginBtn" onclick="login(event)">Login</button>
-                <div class="social-icons">
-                    <a href="#"><div class="go"><i class="fab fa-google"></i>  Google</div></a>
-                    <a href="#"><div class="fb"><i class="fab fa-facebook"></i>  Facebook</div></a>
-                </div>
+                <article class="social-icons">
+                    <a href="#"><aside class="go"><i class="fab fa-google"></i>  Google</aside></a>
+                    <a href="#"><aside class="fb"><i class="fab fa-facebook"></i>  Facebook</aside></a>
+                </article>
             </form>
-        </div>
+        </section>
 
-        <div class="overlay-container">
-            <div class="overlay">
-                <div class="overlay-panel overlay-left">
-                    <h1>Bem vindo de volta!</h1>
+        <section class="overlay-container">
+            <article class="overlay">
+                <article class="overlay-panel overlay-left">
+                    <h1 style="font-size: 2em;">Bem vindo de volta!</h1>
                     <p>Digite seus dados para logar</p>
                     <button class="ghost" id="signIn">Logar</button>
-                </div>
-                <div class="overlay-panel overlay-right">
-                    <h1>Olá!</h1>
+                </article>
+                <article class="overlay-panel overlay-right">
+                    <h1 style="font-size: 2em;">Olá!</h1>
                     <p>Preencha aqui suas informações para se cadastrar</p>
                     <button class="ghost" id="signUp">Registrar-se</button>
-                </div>
-            </div>
-        </div>
-    </div>
+                </article>
+            </article>
+        </section>
+    </main>
 
    
 </body> 
